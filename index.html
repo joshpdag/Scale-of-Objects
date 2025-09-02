@@ -62,6 +62,7 @@
             box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
         
+        .huge-world { background: linear-gradient(135deg, #667eea, #764ba2); color: white; }
         .big-world { background: linear-gradient(135deg, #a8edea, #fed6e3); }
         .human-world { background: linear-gradient(135deg, #d9a7c7, #fffcdc); }
         .small-world { background: linear-gradient(135deg, #ffecd2, #fcb69f); }
@@ -97,6 +98,17 @@
             font-weight: bold;
             color: #2c3e50;
             margin-bottom: 8px;
+        }
+        
+        .pattern-show {
+            font-size: 1.1em;
+            color: #e74c3c;
+            font-weight: bold;
+            background: rgba(231, 76, 60, 0.1);
+            padding: 5px 10px;
+            border-radius: 8px;
+            margin: 5px 0;
+            border: 1px solid rgba(231, 76, 60, 0.3);
         }
         
         .object {
@@ -145,109 +157,155 @@
 <body>
     <div class="container">
         <h1>🔍 Scale Ladder 🔬</h1>
-        <p class="subtitle">From the tallest basketball player to the tiniest atom!</p>
+        <p class="subtitle">From the tallest mountains to the tiniest atoms!</p>
         
         <div class="scale-container">
-            <div class="scale-item big-world">
-                <div class="world-label">BIG WORLD</div>
-                <div class="icon">🏀</div>
+            <div class="scale-item huge-world">
+                <div class="world-label">HUGE WORLD</div>
+                <div class="icon">🏔️</div>
                 <div class="content">
-                    <div class="measurement">2 meters (6.5 feet)</div>
-                    <div class="object">Tall basketball player</div>
-                    <div class="description">About as tall as a doorway</div>
+                    <div class="measurement">1000.0 meter</div>
+                    <div class="pattern-show">1 × 1,000 = <strong>1000.0</strong></div>
+                    <div class="object">Tall mountain / Large building</div>
+                    <div class="description">Same as 1 kilometer!</div>
                 </div>
             </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
+            <div class="scale-item big-world">
+                <div class="world-label">BIG WORLD</div>
+                <div class="icon">🏈</div>
+                <div class="content">
+                    <div class="measurement">100.0 meter</div>
+                    <div class="pattern-show">1 × 100 = <strong>100.0</strong></div>
+                    <div class="object">Football field length</div>
+                    <div class="description">About as long as a city block</div>
+                </div>
+            </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
+            <div class="scale-item big-world">
+                <div class="world-label">BIG WORLD</div>
+                <div class="icon">🚌</div>
+                <div class="content">
+                    <div class="measurement">10.0 meter</div>
+                    <div class="pattern-show">1 × 10 = <strong>10.0</strong></div>
+                    <div class="object">School bus / Large room</div>
+                    <div class="description">About 3 stories tall</div>
+                </div>
+            </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
             
             <div class="scale-item human-world">
                 <div class="world-label">HUMAN WORLD</div>
                 <div class="icon">🎸</div>
                 <div class="content">
-                    <div class="measurement">1 meter (3.3 feet)</div>
-                    <div class="object">Guitar length</div>
+                    <div class="measurement">1.0 meter</div>
+                    <div class="pattern-show">1 ÷ 1 = <strong>1.0</strong></div>
+                    <div class="object">Tall person / Guitar length</div>
                     <div class="description">Same as 100 centimeters</div>
                 </div>
             </div>
             
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
             <div class="scale-item human-world">
+                <div class="world-label">HUMAN WORLD</div>
                 <div class="icon">📱</div>
                 <div class="content">
-                    <div class="measurement">15 centimeters (6 inches)</div>
-                    <div class="object">Smartphone</div>
-                    <div class="description">About the length of a dollar bill</div>
+                    <div class="measurement">0.1 meter</div>
+                    <div class="pattern-show">1 ÷ 10 = <strong>0.1</strong></div>
+                    <div class="object">Smartphone width</div>
+                    <div class="description">About the width of your hand</div>
                 </div>
             </div>
             
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
             <div class="scale-item human-world">
-                <div class="icon">🪙</div>
+                <div class="icon">📎</div>
                 <div class="content">
-                    <div class="measurement">2.5 centimeters (1 inch)</div>
-                    <div class="object">Quarter coin</div>
-                    <div class="description">Same as 25 millimeters</div>
+                    <div class="measurement">0.01 meter</div>
+                    <div class="pattern-show">1 ÷ 100 = <strong>0.01</strong></div>
+                    <div class="object">Paperclip width / Fingernail</div>
+                    <div class="description">Same as 1 centimeter</div>
                 </div>
             </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
             
             <div class="scale-item small-world">
                 <div class="world-label">SMALL WORLD</div>
-                <div class="icon">📎</div>
+                <div class="icon">🐜</div>
                 <div class="content">
-                    <div class="measurement">1 centimeter (0.4 inches)</div>
-                    <div class="object">Paperclip width</div>
-                    <div class="description">Same as 10 millimeters</div>
+                    <div class="measurement">0.001 meter</div>
+                    <div class="pattern-show">1 ÷ 1,000 = <strong>0.001</strong></div>
+                    <div class="object">Small ant / Grain of sand</div>
+                    <div class="description">Same as 1 millimeter</div>
                 </div>
             </div>
             
-            <div class="scale-item small-world">
-                <div class="icon">🐜</div>
-                <div class="content">
-                    <div class="measurement">3 millimeters</div>
-                    <div class="object">Small ant</div>
-                    <div class="description">About the size of a grain of rice width</div>
-                </div>
-            </div>
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
             
             <div class="scale-item tiny-world">
                 <div class="world-label">TINY WORLD</div>
                 <div class="icon">💇‍♀️</div>
                 <div class="content">
-                    <div class="measurement">0.1 millimeters</div>
+                    <div class="measurement">0.0001 meter</div>
+                    <div class="pattern-show">1 ÷ 10,000 = <strong>0.0001</strong></div>
                     <div class="object">Human hair thickness</div>
-                    <div class="description">10 times thinner than a grain of sand!</div>
+                    <div class="description">Thinner than the finest thread!</div>
                 </div>
             </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
             
             <div class="scale-item super-tiny">
                 <div class="world-label">SUPER TINY</div>
                 <div class="icon">🔬</div>
                 <div class="content">
-                    <div class="measurement">0.01 millimeters</div>
+                    <div class="measurement">0.00001 meter</div>
+                    <div class="pattern-show">1 ÷ 100,000 = <strong>0.00001</strong></div>
                     <div class="object">Human body cell</div>
                     <div class="description">Need a microscope to see it!</div>
                 </div>
             </div>
             
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
             <div class="scale-item super-tiny">
                 <div class="icon">🦠</div>
                 <div class="content">
-                    <div class="measurement">0.001 millimeters</div>
+                    <div class="measurement">0.000001 meter</div>
+                    <div class="pattern-show">1 ÷ 1,000,000 = <strong>0.000001</strong></div>
                     <div class="object">Bacteria</div>
-                    <div class="description">1,000 could fit across a grain of sand</div>
+                    <div class="description">Thousands could fit in a single cell!</div>
                 </div>
             </div>
+            
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
             
             <div class="scale-item invisible">
                 <div class="world-label">INVISIBLE WORLD</div>
                 <div class="icon">🦠</div>
                 <div class="content">
-                    <div class="measurement">0.0001 millimeters</div>
+                    <div class="measurement">0.0000001 meter</div>
+                    <div class="pattern-show">1 ÷ 10,000,000 = <strong>0.0000001</strong></div>
                     <div class="object">Virus (like cold virus)</div>
                     <div class="description">So small it can sneak into your cells!</div>
                 </div>
             </div>
             
+            <div class="comparison-arrow">⬇️ <strong>÷ 10</strong></div>
+            
             <div class="scale-item invisible">
                 <div class="icon">⚛️</div>
                 <div class="content">
-                    <div class="measurement">0.0000001 millimeters</div>
+                    <div class="measurement">0.00000001 meter</div>
+                    <div class="pattern-show">1 ÷ 100,000,000 = <strong>0.00000001</strong></div>
                     <div class="object">Atom</div>
                     <div class="description">Everything is made of these tiny building blocks!</div>
                 </div>
@@ -257,9 +315,9 @@
         <div style="margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 15px; text-align: center;">
             <h3 style="color: #2c3e50; margin-bottom: 15px;">🤯 See The Pattern!</h3>
             <p style="margin: 10px 0;"><strong>Look at the red boxes!</strong> Each step is "÷ 10" (divide by 10) 📏</p>
-            <p style="margin: 10px 0;"><strong>See the pattern:</strong> 1.0 → 0.1 → 0.01 → 0.001 → 0.0001... 🔢</p>
-            <p style="margin: 10px 0;"><strong>Each number</strong> has one more zero after the decimal point! ✨</p>
-            <p style="margin: 10px 0;"><strong>From person to atom:</strong> We divide by 10 eight times = ÷ 100,000,000! 🤯</p>
+            <p style="margin: 10px 0;"><strong>See the pattern:</strong> 1000.0 → 100.0 → 10.0 → 1.0 → 0.1 → 0.01... 🔢</p>
+            <p style="margin: 10px 0;"><strong>Each number</strong> gets 10 times smaller every step! ✨</p>
+            <p style="margin: 10px 0;"><strong>From mountain to atom:</strong> We divide by 10 eleven times = ÷ 100,000,000,000! 🤯</p>
         </div>
     </div>
 </body>
